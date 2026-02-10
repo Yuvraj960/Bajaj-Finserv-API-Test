@@ -1,0 +1,188 @@
+{
+  "info": {
+    "_postman_id": "59263df9-c505-4f0e-8d8c-e01001821df8",
+    "name": "Bajaj API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37895591",
+    "_collection_link": "https://go.postman.co/collection/37895591-59263df9-c505-4f0e-8d8c-e01001821df8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Fibonacci",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fibonacci\": 7\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/bfhl",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "bfhl"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prime",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"prime\": [2, 4, 7, 9, 11]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/bfhl",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "bfhl"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LCM",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"lcm\": [12, 18, 24]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/bfhl",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "bfhl"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "HCF",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"hcf\": [24, 36, 60]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/bfhl",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "bfhl"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AIChat",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"AI\": \"What is the capital of India?\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/bfhl",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "bfhl"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://bajajapitest.vercel.app"
+    }
+  ]
+}
